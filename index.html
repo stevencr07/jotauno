@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JOTA UNO | Custom Branding</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    color:#111;
+    background:#fff;
+    line-height:1.6;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 2rem;
+}
+
+header{
+    padding:2rem 0;
+    border-bottom:1px solid #eee;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:700;
+    letter-spacing:4px;
+}
+
+.tagline{
+    font-size:.8rem;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#777;
+}
+
+.hero{
+    min-height:75vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:1.5rem;
+}
+
+.hero p{
+    font-size:1.2rem;
+    color:#555;
+    margin-bottom:2rem;
+}
+
+.button{
+    display:inline-block;
+    padding:14px 30px;
+    background:#111;
+    color:white;
+    text-decoration:none;
+    border-radius:4px;
+}
+
+.section{
+    padding:6rem 0;
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:2rem;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:2rem;
+}
+
+.card{
+    border:1px solid #eee;
+    padding:2rem;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:1rem;
+}
+
+.products{
+    background:#fafafa;
+}
+
+footer{
+    padding:3rem 0;
+    border-top:1px solid #eee;
+    text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<div class="logo">JOTA UNO</div>
+<div class="tagline">Custom Branding</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<h1>Merch corporativo que representa tu marca.</h1>
+
+<p>
+Diseñamos y producimos productos personalizados para empresas,
+equipos y eventos que buscan destacar.
+</p>
+
+<a href="#contact" class="button">Solicitar Cotización</a>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">Servicios</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Corporate Merch</h3>
+<p>Productos personalizados para fortalecer la identidad de tu marca.</p>
+</div>
+
+<div class="card">
+<h3>Apparel</h3>
+<p>Camisetas, hoodies, gorras y prendas corporativas.</p>
+</div>
+
+<div class="card">
+<h3>Corporate Kits</h3>
+<p>Kits de bienvenida y regalos empresariales personalizados.</p>
+</div>
+
+<div class="card">
+<h3>Brand Applications</h3>
+<p>Llevamos tu identidad visual a productos físicos.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section products">
+<div class="container">
+
+<h2 class="section-title">Productos</h2>
+
+<div class="grid">
+
+<div class="card">T-Shirts</div>
+<div class="card">Hoodies</div>
+<div class="card">Mugs</div>
+<div class="card">Tumblers</div>
+<div class="card">Tote Bags</div>
+<div class="card">Stickers</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="container">
+
+<h2 class="section-title">Contacto</h2>
+
+<p>Email: hola@jotauno.com</p>
+<p>WhatsApp: +506 XXXX-XXXX</p>
+<p>Instagram: @jotauno</p>
+
+</div>
+</section>
+
+<footer>
+<div class="container">
+© 2026 JOTA UNO · Custom Branding
+</div>
+</footer>
+
+</body>
+</html>
