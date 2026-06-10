@@ -62,6 +62,7 @@ header{
 
 .hero-content{
     padding-left:2rem;
+    margin-top:1rem;
 }
     
 .hero-image img{
@@ -73,6 +74,7 @@ header{
 }
 
 .hero-image{
+    margin-bottom:2rem;
     order:-1;
 }    
 
@@ -149,6 +151,11 @@ footer{
     
 @media(max-width:768px){
 
+    .hero{
+        min-height:auto;
+        padding:2rem 0;
+    }
+
     .hero-grid{
         grid-template-columns:1fr;
         gap:2rem;
@@ -156,6 +163,7 @@ footer{
 
     .hero-image{
         order:-1;
+        margin-bottom:1rem;
     }
 
     .hero-content{
@@ -165,6 +173,7 @@ footer{
 
     .hero h1{
         font-size:2rem;
+        margin-top:0;
     }
 
 }
