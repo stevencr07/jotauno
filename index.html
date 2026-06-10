@@ -37,29 +37,37 @@ header{
 .logo{
     font-size:1.8rem;
     font-weight:700;
-    letter-spacing:4px;
+    letter-spacing:6px;
 }
 
 .tagline{
-    font-size:.8rem;
-    letter-spacing:3px;
+    font-size:0.9rem;
+    letter-spacing:4px;
     text-transform:uppercase;
-    color:#777;
+    color:#666;
 }
 
 .hero{
-    min-height:75vh;
+    min-height:80vh;
     display:flex;
     align-items:center;
 }
 
-.hero-content{
-    max-width:700px;
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:4rem;
+    align-items:center;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:8px;
 }
 
 .hero h1{
-    font-size:4rem;
-    line-height:1.1;
+    font-size:4.5rem;
+    line-height:1;
     margin-bottom:1.5rem;
 }
 
@@ -71,11 +79,12 @@ header{
 
 .button{
     display:inline-block;
-    padding:14px 30px;
+    padding:18px 36px;
     background:#111;
     color:white;
     text-decoration:none;
-    border-radius:4px;
+    border-radius:6px;
+    font-weight:600;
 }
 
 .section{
@@ -123,6 +132,12 @@ footer{
     font-size:2.5rem;
 }
 
+.card img{
+    width:100%;
+    margin-bottom:1rem;
+    border-radius:6px;
+}
+    
 }
 
 </style>
@@ -137,18 +152,32 @@ footer{
 </header>
 
 <section class="hero">
-<div class="container">
-<div class="hero-content">
-<h1>Merch corporativo que representa tu marca.</h1>
+    <div class="container hero-grid">
 
-<p>
-Diseñamos y producimos productos personalizados para empresas,
-equipos y eventos que buscan destacar.
-</p>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=900"
+                 alt="Corporate Merch">
+        </div>
 
-<a href="#contact" class="button">Solicitar Cotización</a>
-</div>
-</div>
+        <div class="hero-content">
+
+            <h1>
+                Merch corporativo que fortalece tu marca.
+            </h1>
+
+            <p>
+                Diseñamos y producimos merch corporativo,
+                apparel personalizado y kits empresariales
+                para empresas que buscan destacar.
+            </p>
+
+            <a href="#contact" class="button">
+                Solicitar Cotización
+            </a>
+
+        </div>
+
+    </div>
 </section>
 
 <section class="section">
@@ -187,9 +216,47 @@ equipos y eventos que buscan destacar.
 
 <h2 class="section-title">Productos</h2>
 
+
+<! -- Porque JOTAUNO? -->
+    
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">
+¿Por qué JOTA UNO?
+</h2>
+
 <div class="grid">
 
-<div class="card">T-Shirts</div>
+<div class="card">
+<h3>Diseño orientado a marca</h3>
+</div>
+
+<div class="card">
+<h3>Producción personalizada</h3>
+</div>
+
+<div class="card">
+<h3>Calidad profesional</h3>
+</div>
+
+<div class="card">
+<h3>Atención cercana</h3>
+</div>
+
+    
+</div>
+</div>
+</section>
+
+<! -- FIN Porque JOTAUNO? -->
+    
+<div class="grid">
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600">
+    <h3>Corporate Apparel</h3>
+</div>
 <div class="card">Hoodies</div>
 <div class="card">Mugs</div>
 <div class="card">Tumblers</div>
@@ -206,7 +273,7 @@ equipos y eventos que buscan destacar.
 
 <h2 class="section-title">Contacto</h2>
 
-<p>Email: hola@jotauno.com</p>
+<p>Email: info@jotauno.com</p>
 <p>WhatsApp: +506 XXXX-XXXX</p>
 <p>Instagram: @jotauno</p>
 
