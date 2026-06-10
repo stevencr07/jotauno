@@ -67,10 +67,13 @@ header{
 .hero-image img{
     width:100%;
     border-radius:8px;
-    order:-1;
     height:auto;
     display:block;
 }
+
+.hero-image{
+    order:-1;
+}    
 
 .hero h1{
     font-size:2.5rem;
@@ -145,7 +148,24 @@ footer{
     
 @media(max-width:768px){
 
-    
+    .hero-grid{
+        grid-template-columns:1fr;
+        gap:2rem;
+    }
+
+    .hero-image{
+        order:-1;
+    }
+
+    .hero-content{
+        padding-left:0;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
 }
 
 </style>
